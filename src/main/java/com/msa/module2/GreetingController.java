@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@LoggingAnnotation
 public class GreetingController {
 
     private static final String template = "Hello, %s!";

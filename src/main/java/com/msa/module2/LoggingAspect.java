@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class LoggingAspect {
-    private Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
+    private final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
     @Pointcut("within(com.msa.module2.GreetingController)")
     public void logParamsPointcut() {
