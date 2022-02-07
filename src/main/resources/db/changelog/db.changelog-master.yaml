@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-master.yaml
+  - changeSet:
+      id: 1
+      author: your_liquibase_username
+      changes:
+        - createTable:
+            tableName: simple_entity
+            columns:
+              - column:
+                  name: id
+                  type: bigserial
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: some_string
+                  type: text
+                  constraints:
+                    nullable: false
+              - column:
+                  name: some_integer
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: another_string
+                  type: text
+                  constraints:
+                    nullable: false
