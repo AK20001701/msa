@@ -1,4 +1,4 @@
-package com.msa.module5.exception;
+package com.msa.module6.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

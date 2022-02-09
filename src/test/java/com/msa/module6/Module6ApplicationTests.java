@@ -1,10 +1,10 @@
-package com.msa.module5;
+package com.msa.module6;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Module5ApplicationTests {
+class Module6ApplicationTests {
 
 	@Test
 	void contextLoads() {

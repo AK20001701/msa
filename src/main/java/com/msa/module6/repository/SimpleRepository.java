@@ -1,6 +1,6 @@
-package com.msa.module5.repository;
+package com.msa.module6.repository;
 
-import com.msa.module5.entity.SimpleEntity;
+import com.msa.module6.entity.SimpleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

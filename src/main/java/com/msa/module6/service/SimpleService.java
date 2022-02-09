@@ -1,9 +1,10 @@
-package com.msa.module5.service;
+package com.msa.module6.service;
 
-import com.msa.module5.entity.SimpleEntity;
-import com.msa.module5.exception.NotFoundException;
-import com.msa.module5.repository.SimpleRepository;
+import com.msa.module6.entity.SimpleEntity;
+import com.msa.module6.exception.NotFoundException;
+import com.msa.module6.repository.SimpleRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -28,6 +29,7 @@ public class SimpleService {
         simpleRepository.save(simpleEntity);
     }
 
+    @Transactional
     public void updateSimpleEntity(SimpleEntity simpleEntity){
         SimpleEntity entity = getSimpleEntity(simpleEntity.getId());
         entity.setSomeString(simpleEntity.getSomeString());
@@ -36,6 +38,7 @@ public class SimpleService {
         simpleRepository.save(entity);
     }
 
+    @Transactional
     public void deleteSimpleEntity(Long id){
         SimpleEntity entity = getSimpleEntity(id);
         simpleRepository.delete(entity);

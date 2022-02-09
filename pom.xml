@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.msa</groupId>
-	<artifactId>module5</artifactId>
+	<artifactId>module6</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>module5</name>
+	<name>module6</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>

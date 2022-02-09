@@ -1,7 +1,7 @@
-package com.msa.module5.controller;
+package com.msa.module6.controller;
 
-import com.msa.module5.entity.SimpleEntity;
-import com.msa.module5.service.SimpleService;
+import com.msa.module6.entity.SimpleEntity;
+import com.msa.module6.service.SimpleService;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
