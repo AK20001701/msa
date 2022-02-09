@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
+@Transactional
 public class SimpleService {
 
     private final SimpleRepository simpleRepository;
@@ -29,7 +30,6 @@ public class SimpleService {
         simpleRepository.save(simpleEntity);
     }
 
-    @Transactional
     public void updateSimpleEntity(SimpleEntity simpleEntity){
         SimpleEntity entity = getSimpleEntity(simpleEntity.getId());
         entity.setSomeString(simpleEntity.getSomeString());
@@ -38,7 +38,6 @@ public class SimpleService {
         simpleRepository.save(entity);
     }
 
-    @Transactional
     public void deleteSimpleEntity(Long id){
         SimpleEntity entity = getSimpleEntity(id);
         simpleRepository.delete(entity);
