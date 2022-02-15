@@ -16,7 +16,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: some_string
-                  type: text
+                  type: varchar(255)
                   constraints:
                     nullable: false
               - column:
@@ -26,6 +26,6 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: another_string
-                  type: text
+                  type: varchar(255)
                   constraints:
                     nullable: false

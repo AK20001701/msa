@@ -1,13 +1,15 @@
-package com.msa.module5.service;
+package com.msa.module7.service;
 
-import com.msa.module5.entity.SimpleEntity;
-import com.msa.module5.exception.NotFoundException;
-import com.msa.module5.repository.SimpleRepository;
+import com.msa.module7.entity.SimpleEntity;
+import com.msa.module7.exception.NotFoundException;
+import com.msa.module7.repository.SimpleRepository;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
+@Transactional
 public class SimpleService {
 
     private final SimpleRepository simpleRepository;

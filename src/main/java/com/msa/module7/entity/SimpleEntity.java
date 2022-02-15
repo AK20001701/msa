@@ -1,4 +1,4 @@
-package com.msa.module5.entity;
+package com.msa.module7.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

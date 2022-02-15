@@ -1,13 +1,13 @@
-package com.msa.module5;
+package com.msa.module7;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Module5Application {
+public class Module7Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Module5Application.class, args);
+		SpringApplication.run(Module7Application.class, args);
 	}
 
 }
