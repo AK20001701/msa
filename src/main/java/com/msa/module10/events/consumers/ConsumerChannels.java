@@ -6,8 +6,8 @@ import org.springframework.messaging.SubscribableChannel;
 
 public interface ConsumerChannels {
 
-    String DIRECTED = "demo";
+    String DEMO = "demo";
 
-    @Input(DIRECTED)
+    @Input(DEMO)
     SubscribableChannel demo();
 }

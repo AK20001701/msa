@@ -10,7 +10,7 @@ public class DemoMessageListener {
 
     private Logger logger = LoggerFactory.getLogger(DemoMessageListener.class);
 
-    @StreamListener(ConsumerChannels.DIRECTED)
+    @StreamListener(ConsumerChannels.DEMO)
     public void demo(String message) {
         logger.info("Demo: " + message);
     }
